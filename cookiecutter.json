@@ -1,0 +1,16 @@
+{
+  "full_name": "Jia En Tsai",
+  "email": "mockingjet.jet@gmail.com",
+  "github_username": "mockingjet",
+  "app_name": "My-APP",
+  "app_slug": "{{cookiecutter.app_name.lower().replace(' ', '_').replace('-', '_')}}",
+  "app_short_description": "Flask Restful API Boilerplate contains all the boilerplate you need to create a Flask Restful Application.",
+  "database": [
+    "sqlite",
+    "postgres"
+  ],
+  "db_user": "postgres",
+  "db_passwd": "password",
+  "db_addr": "127.0.0.1",
+  "db_name": "{{cookiecutter.app_slug}}"
+}

@@ -1,0 +1,13 @@
+[run]
+omit =
+    */__init__.py
+    {{cookiecutter.app_slug}}/app.py
+    {{cookiecutter.app_slug}}/commands.py
+
+[report]
+show_missing = True
+
+exclude_lines =
+    from
+    import
+    except Exception as err:

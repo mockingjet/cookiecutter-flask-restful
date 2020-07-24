@@ -1,0 +1,16 @@
+{% raw  -%}
+from flask import Blueprint, request
+
+from {{app}}.utils import list_jsonify
+from .models import {{model}}
+
+bp = Blueprint('{{module}}', __name__)
+
+
+@bp.route('/{{module}}', methods=['GET'])
+@list_jsonify(use_date=["created_at"])
+def get_{{module}}():
+    {{module}} = {{model}}.query.all()
+    return {{module}}
+
+{%- endraw %}
